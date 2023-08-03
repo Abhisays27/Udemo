@@ -110,7 +110,7 @@ const Footer = () => {
           </div>
           <div className="footer-content-column">
             <div className="footer-call-to-action">
-              <h2 className="footer-call-to-action-title"> Let's Chat</h2>
+              <h2 className="footer-call-to-action-title"> Let&apos;s Chat</h2>
               <a
                 className="footer-call-to-action-button"
                 href="#"

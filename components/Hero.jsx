@@ -14,9 +14,9 @@ export default function Hero() {
 
         <h2 >Discover Vast Knowledge on Our Video Course Platform!</h2>
         <p>
-          "Set Sail on a Lifelong Learning Adventure! Uncover a Vast Array of
+        &ldquo;Set Sail on a Lifelong Learning Adventure! Uncover a Vast Array of
           Premium and Free Courses, and Unleash Your Innate Potential with
-          Expert-Led Instruction and Interactive Coursework"
+          Expert-Led Instruction and Interactive Coursework&ldquo;
         </p>
         <Link href="/courses">
           <button className="button-29"  role="button">Explore Course&apos;s </button>
