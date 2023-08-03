@@ -1,0 +1,162 @@
+.hero {
+  max-width: 75rem;
+  min-height: 80vh;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+}
+.hero__text {
+  padding-top: 2rem;
+  width: 50%;
+}
+.hero__text h1 {
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.hero__text h2 {
+  font-size: 2.4rem;
+  line-height: 120%;
+  font-weight: 700;
+}
+.hero__text p {
+  color: rgba(0, 0, 0, 0.6);
+  margin: 1.5rem 0 2.5rem;
+  line-height: 160%;
+}
+.hero__text button {
+  border: none;
+  background: #5f52b5;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  /* Add transition for smooth animation */
+  cursor: pointer !important;
+  /* Add box-shadow to create a subtle shadow effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+  transition: box-shadow 0.3s ease !important; /* Add transition for smooth animation */
+}
+
+.hero__text button:hover{
+ /* Change cursor to pointer on hover */
+ cursor: pointer !important;
+ /* Add a more prominent shadow effect on hover */
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+
+
+
+.hero__image {
+  width: 50%;
+  display: flex;
+}
+.hero__image img {
+  width: 100%;
+  /* Ensure the image width is responsive */
+  margin: 0 auto;
+  /* Center the image horizontally */
+  max-height: 100%;
+  /* Prevent image overflow */
+}
+@media only screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+  .hero__text, .hero__image {
+    width: 100%;
+  }
+  .hero__text h1 {
+    font-size: 1.5rem;
+  }
+  .hero__text h2 {
+    font-size: 2rem;
+  }
+  .hero__text p {
+    font-size: 1rem;
+  }
+  .hero__image img {
+    margin: 2rem auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero__text, .hero__image {
+    width: 50%;
+  }
+  .hero__text h1 {
+    font-size: 1.7rem;
+  }
+  .hero__text h2 {
+    font-size: 2.2rem;
+  }
+  .hero__text p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hero__text {
+    padding-top: 4rem;
+  }
+  .hero__text h1 {
+    font-size: 2rem;
+  }
+  .hero__text h2 {
+    font-size: 2.6rem;
+  }
+  .hero__text p {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+/* CSS */
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}

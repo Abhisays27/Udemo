@@ -1,0 +1,63 @@
+.container {
+  max-width: 75rem;
+  margin: 5rem auto;
+  padding: 0 2rem;
+}
+.container h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+ 
+}
+.container .courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 4rem 0 0;
+  gap: 1.5rem;
+  justify-items: center;
+}
+.container .courses .card {
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  max-width: 25rem;
+  width: 90%;
+}
+@media only screen and (max-width: 1000px) {
+  .container .courses {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .container .courses {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
+}
+.back__button {
+  position: absolute;
+  top: 6rem;
+  left: 2rem;
+  display: flex;
+  align-items: center;
+  background: #fcfcfc;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+.back__button button {
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  margin-left: 0.3rem;
+  cursor: pointer;
+}
+@media only screen and (max-width: 590px) {
+  .back__button {
+    top: 9rem;
+  }
+}
