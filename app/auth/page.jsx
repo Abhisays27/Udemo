@@ -61,28 +61,27 @@ export default function AuthForm() {
     router.refresh();
   };
 
- 
-
-
-// Function to handle Google authentication
-const handleGoogleSignIn = async () => {
-  const { user, error } = await supabase.auth.signInWithOAuth({ provider: "google" });
-  if (error) {
-    alert("Google authentication failed. Please try again.");
-  } else if (user) {
-    // Set the user details in the global context or update login status
-    login(user);
-
-    // Navigate to the homepage or desired page
-    router.push("/");
-
-    // Force a page refresh after a short delay (e.g., 100 milliseconds)
+  // Function to handle Google authentication
+  const handleGoogleSignIn = async () => {
+    const { user, error } = await supabase.auth.signInWithOAuth({ provider: "google" });
+    if (error) {
+      alert("Google authentication failed. Please try again.");
+    } else if (user) {
+      // Set the user details in the global context or update login status
+      login(user);
+      // Redirect to the homepage or desired page
+        // Reload the page after 100 milliseconds
     setTimeout(() => {
-      window.location.reload();
+      router.push("/");
     }, 100);
-  }
-};
 
+    // Reload the page again after another 100 milliseconds
+    setTimeout(() => {
+      router.push("/");
+    }, 200);
+    }
+  };
+  
   const { userDetails } = useGlobalContext();
   if (userDetails?.email) {
     router.push("/");
