@@ -71,15 +71,13 @@ export default function AuthForm() {
       login(user);
       // Redirect to the homepage or desired page
         // Reload the page after 100 milliseconds
-    setTimeout(() => {
-      router.push("/");
-    }, 100);
+        router.push("/");
 
-    // Reload the page again after another 100 milliseconds
-    setTimeout(() => {
-      router.push("/");
-    }, 200);
-    }
+        // Force a page refresh after a short delay (e.g., 500 milliseconds)
+        setTimeout(() => {
+          window.location.reload();
+        }, 500);
+      }
   };
   
   const { userDetails } = useGlobalContext();
