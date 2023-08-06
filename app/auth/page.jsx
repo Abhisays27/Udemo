@@ -70,7 +70,15 @@ export default function AuthForm() {
       // Set the user details in the global context or update login status
       login(user);
       // Redirect to the homepage or desired page
+        // Reload the page after 100 milliseconds
+    setTimeout(() => {
       router.push("/");
+    }, 100);
+
+    // Reload the page again after another 100 milliseconds
+    setTimeout(() => {
+      router.push("/");
+    }, 200);
     }
   };
   
